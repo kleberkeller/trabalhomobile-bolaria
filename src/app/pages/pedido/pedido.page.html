@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Seu pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-divider color="medium">
+    <ion-label>
+      <h2>Bolo escolhido</h2>
+    </ion-label>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label color="dark">
+      {{item.nome}}
+    </ion-label>
+  </ion-item-divider>
+
+  <ion-item-divider color="medium">
+    <ion-label>
+      <h2>Dados para entrega</h2>
+    </ion-label>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label color="dark">Nome:</ion-label>
+    <ion-input></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+      <ion-label color="dark">Tel.:</ion-label>
+      <ion-input></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+      <ion-label color="dark">End.:</ion-label>
+      <ion-input></ion-input>
+  </ion-item-divider>
+
+  <ion-button expand="block" (click)="confirmaPedido()">Confirmar Pedido</ion-button>
+</ion-content>
